@@ -1,26 +1,15 @@
+using Catalog.API.Extensions;
 using Catalog.API.Services;
-using Microsoft.Azure.Cosmos;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Add framework services
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
 
-builder.Services.AddSingleton(s =>
-{
-    var cosmosClient = new CosmosClient(
-        builder.Configuration["CosmosDb:Account"],
-        builder.Configuration["CosmosDb:Key"]);
-
-    var logger = s.GetRequiredService<ILogger<CatalogService>>();
-
-    return new CatalogService(
-        cosmosClient,
-        builder.Configuration["CosmosDb:DatabaseName"],
-        builder.Configuration["CosmosDb:ContainerName"],
-        logger);
-});
+// Add infrastructure services via extension method
+builder.Services.AddCosmosDbServices();
 
 var app = builder.Build();
 

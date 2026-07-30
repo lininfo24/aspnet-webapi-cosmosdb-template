@@ -1,10 +1,11 @@
 # ASP.NET Core Web API & Cosmos DB Template
 
-A clean, production-ready project template for building Web APIs with ASP.NET Core and Azure Cosmos DB using the native `Microsoft.Azure.Cosmos` SDK. It includes secure local configuration structures.
+A clean, production-ready project template for building Web APIs with ASP.NET Core and Azure Cosmos DB using the native `Microsoft.Azure.Cosmos` SDK. It includes secure local configuration structures and automated dependency injection patterns.
 
 ## Features
 
 - **Native SDK Integration**: High-performance, thread-safe `CosmosClient` setup.
+- **Separation of Concerns**: Infrastructure layers decoupled using custom IServiceCollection extension methods.
 - **Fail-Fast Configuration**: Immediate validation on startup to catch missing settings early.
 - **Zero Secret Leakage**: Configured natively to leverage .NET User Secrets for safe local development.
 
