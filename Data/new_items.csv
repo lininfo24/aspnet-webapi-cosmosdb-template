@@ -1,0 +1,6 @@
+Id,Title,Description,ImageUrl,AdditionalInfo,PublishedDate,IsPublished
+P0001,"Wireless Headphones","High-quality wireless headphones with noise-cancellation feature.","https://example.com","Battery life: 20 hours",2024-08-01,true
+P0002,"4K Ultra HD Smart TV","55-inch 4K Ultra HD Smart TV with built-in streaming services.","https://example.com","Includes HDMI cable",2024-07-15,true
+P0003,"Electric Scooter","Foldable electric scooter with a top speed of 25 km/h.","https://example.com","Max load: 120 kg",2024-07-10,true
+P0004,"Fitness Tracker","Waterproof fitness tracker with heart rate monitor.","https://example.com","Compatible with iOS and Android",2024-07-20,false
+P0005,"Smart Home Speaker","Voice-controlled smart speaker with integrated assistant.","https://example.com","Supports multiple languages",2024-08-05,true
